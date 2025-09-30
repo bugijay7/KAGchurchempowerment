@@ -90,57 +90,57 @@ function Navbar() {
             aria-label="Toggle menu"
             aria-expanded={isOpen}
           >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isOpen ? <X className="w-6 h-6 text-black" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
-        {/* Mobile Nav */}
-        {isOpen && (
-          <div className="md:hidden pb-4 space-y-2">
-            <button
-              onClick={() => scrollToSection("home")}
-              className="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded"
-            >
-              Home
-            </button>
-            <button
-              onClick={() => scrollToSection("about")}
-              className="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded"
-            >
-              About
-            </button>
-            <button
-              onClick={() => scrollToSection("ministries")}
-              className="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded"
-            >
-              Ministries
-            </button>
-            <button
-              onClick={() => scrollToSection("events")}
-              className="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded"
-            >
-              Events
-            </button>
-            <button
-              onClick={() => scrollToSection("sermons")}
-              className="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded"
-            >
-              Sermons
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="block w-full text-left px-4 py-2 hover:bg-gray-100 rounded"
-            >
-              Contact
-            </button>
-            <button
-              onClick={() => scrollToSection("donate")}
-              className="block w-full text-left px-4 py-2 bg-red-600 text-white rounded font-semibold"
-            >
-              Donate
-            </button>
-          </div>
-        )}
+      {/* Mobile Nav */}
+{isOpen && (
+  <div className="md:hidden pb-4 space-y-2">
+    <button
+      onClick={() => scrollToSection("home")}
+      className="block w-full text-left px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100 rounded"
+    >
+      Home
+    </button>
+    <button
+      onClick={() => scrollToSection("about")}
+      className="block w-full text-left px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100 rounded"
+    >
+      About
+    </button>
+    <button
+      onClick={() => scrollToSection("ministries")}
+      className="block w-full text-left px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100 rounded"
+    >
+      Ministries
+    </button>
+    <button
+      onClick={() => scrollToSection("events")}
+      className="block w-full text-left px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100 rounded"
+    >
+      Events
+    </button>
+    <button
+      onClick={() => scrollToSection("sermons")}
+      className="block w-full text-left px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100 rounded"
+    >
+      Sermons
+    </button>
+    <button
+      onClick={() => scrollToSection("contact")}
+      className="block w-full text-left px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100 rounded"
+    >
+      Contact
+    </button>
+    <button
+      onClick={() => scrollToSection("donate")}
+      className="block w-full text-left px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded font-semibold"
+    >
+      Donate
+    </button>
+  </div>
+)}
       </div>
     </nav>
   );
