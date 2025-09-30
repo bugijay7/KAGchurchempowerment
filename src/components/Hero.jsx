@@ -9,7 +9,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center pt-20 bg-cover bg-center"
+      className="relative min-h-screen flex items-center justify-center pt-30 pb-20 bg-cover bg-center"
       style={{ backgroundImage: "url('/src/assets/hero-bg.jpg')" }}
     >
       {/* Overlay for readability */}
