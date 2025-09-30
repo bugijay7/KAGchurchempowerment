@@ -86,7 +86,7 @@ function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100"
+            className="md:hidden p-2 rounded-lg text-black hover:bg-gray-100"
             aria-label="Toggle menu"
             aria-expanded={isOpen}
           >
